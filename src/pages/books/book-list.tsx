@@ -1,5 +1,5 @@
 import {
-  Datagrid,
+  //   Datagrid,
   List,
   NumberField,
   ReferenceField,
@@ -10,6 +10,7 @@ import {
   DeleteButton,
   SearchInput,
 } from "react-admin";
+import FadeInDatagrid from "../../components/animations/FadeInDatagrid";
 
 const BookList = () => {
   const bookFilters = [
@@ -25,13 +26,7 @@ const BookList = () => {
   ];
   return (
     <List filters={bookFilters}>
-      <Datagrid
-        sx={{
-          ".RaDatagrid-headerCell": {
-            paddingBlock: "8px",
-          },
-        }}
-      >
+      <FadeInDatagrid delay={60} duration={350}>
         <TextField source="id" label="Book ID" sortable />
         <TextField source="title" label="Book Title" sortable />
         <ReferenceField
@@ -45,7 +40,7 @@ const BookList = () => {
         <NumberField source="publishedYear" label="Published Year" sortable />
         <EditButton />
         <DeleteButton />
-      </Datagrid>
+      </FadeInDatagrid>
     </List>
   );
 };
