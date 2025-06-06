@@ -24,7 +24,7 @@ export const App = () => (
       edit={EditBook}
       create={CreateBook}
       icon={LibraryBooksIcon}
-      options={{ label: "Books", recordRepresentation: "title" }}
+      options={{ label: "Books" }}
     />
     <Resource
       name="authors"
