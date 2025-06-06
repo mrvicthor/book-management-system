@@ -10,10 +10,16 @@ npm install
 
 ## Development
 
-Start the application in development mode by running:
+1 - Start the application in development mode by running:
 
 ```sh
 npm run dev
+```
+
+2 - Run the json-server
+
+```sh
+npm run json-server
 ```
 
 ## Production
@@ -29,11 +35,3 @@ npm run build
 The included data provider use [ra-data-json-server](https://github.com/marmelab/react-admin/tree/master/packages/ra-data-json-server). It fits REST APIs powered by [JSON Server](https://github.com/typicode/json-server), such as [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
 You'll find an `.env` file at the project root that includes a `VITE_JSON_SERVER_URL` variable. Set it to the URL of your backend. By default, we set it to targets [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
-
-## To Test Locally
-
-```sh
-npm run dev
-
-npm run json-server
-```
