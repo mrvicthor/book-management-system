@@ -13,9 +13,11 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
+    "@lottiefiles/dotlottie-react": "^0.14.0",
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "^7.0.1",
     "framer-motion": "^12.16.0",
+    "lottie-react": "^2.4.1",
     "ra-data-json-server": "^5.8.0",
     "react": "^19.0.0",
     "react-admin": "^5.8.0",
