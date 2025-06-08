@@ -18,7 +18,6 @@ const FadeInDatagrid = ({
   useEffect(() => {
     if (!isLoading && data) {
       setAnimatedRows(new Set());
-      console.log({ data });
       data.forEach((_, index) => {
         setTimeout(() => {
           setAnimatedRows((prev) => new Set([...prev, index]));
