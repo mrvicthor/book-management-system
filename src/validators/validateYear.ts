@@ -1,4 +1,6 @@
-export const validateYear = (value: number) => {
+export const validateYear = (
+  value: number | undefined | null,
+): string | undefined => {
   if (!value) return "Required";
   const currentYear = new Date().getFullYear();
   if (value < 1000 || value > currentYear) {
