@@ -10,7 +10,7 @@ npm install
 
 ## Development
 
-1 - Start the application in development mode by running:
+Start the application in development mode by running:
 
 ```sh
 npm start
