@@ -1,4 +1,4 @@
-# books-management-app
+# Books-Management-App
 
 ## Installation
 
