@@ -1,4 +1,4 @@
-import { ReferenceInput, SelectInput } from "react-admin";
+import { ReferenceInput, required, SelectInput } from "react-admin";
 
 interface AuthorReferenceInputProps {
   source: string;
@@ -8,7 +8,12 @@ interface AuthorReferenceInputProps {
 const AuthorReferenceInput = ({ source, label }: AuthorReferenceInputProps) => {
   return (
     <ReferenceInput source={source} reference="authors" label={label}>
-      <SelectInput optionText="name" optionValue="id" fullWidth />
+      <SelectInput
+        optionText="name"
+        optionValue="id"
+        fullWidth
+        validate={required("Author is required")}
+      />
     </ReferenceInput>
   );
 };

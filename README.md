@@ -13,13 +13,7 @@ npm install
 1 - Start the application in development mode by running:
 
 ```sh
-npm run dev
-```
-
-2 - Run the json-server
-
-```sh
-npm run json-server
+npm start
 ```
 
 ## Production

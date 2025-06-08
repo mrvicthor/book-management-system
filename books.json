@@ -17,6 +17,24 @@
       "authorId": 1,
       "publishedYear": 1960,
       "id": 3
+    },
+    {
+      "title": "Game Of Thrones",
+      "authorId": 2,
+      "publishedYear": 2020,
+      "id": 4
+    },
+    {
+      "title": "Bond",
+      "authorId": 2,
+      "publishedYear": 1936,
+      "id": 5
+    },
+    {
+      "title": "Mortal Kombat",
+      "publishedYear": 1925,
+      "authorId": 2,
+      "id": 6
     }
   ],
   "authors": [

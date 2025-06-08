@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "concurrently \"npm run dev\" \"npm run json-server\"",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",

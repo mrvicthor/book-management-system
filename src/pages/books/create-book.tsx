@@ -6,10 +6,11 @@ import {
   TextInput,
 } from "react-admin";
 import AuthorReferenceInput from "../../components/shared/AuthorReferenceInput";
+import { validateYear } from "../../validators/validateYear";
 
 const CreateBook = () => {
   return (
-    <Create>
+    <Create redirect="list">
       <SimpleForm>
         <TextInput
           source="title"
@@ -21,7 +22,7 @@ const CreateBook = () => {
         <NumberInput
           source="publishedYear"
           label="Published Year"
-          validate={[required()]}
+          validate={[required(), validateYear]}
         />
       </SimpleForm>
     </Create>

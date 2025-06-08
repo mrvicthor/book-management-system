@@ -1,19 +1,15 @@
-import { Datagrid, List, NumberField, TextField } from "react-admin";
+import { List, NumberField, TextField } from "react-admin";
+
+import FadeInDatagrid from "../../components/animations/FadeInDatagrid";
 
 const Authors = () => {
   return (
     <List>
-      <Datagrid
-        sx={{
-          ".RaDatagrid-headerCell": {
-            paddingBlock: "8px",
-          },
-        }}
-      >
+      <FadeInDatagrid delay={60} duration={350}>
         <TextField source="id" label="Author ID" />
         <TextField source="name" label="Author Name" />
         <NumberField source="birthYear" label="Birth Year" />
-      </Datagrid>
+      </FadeInDatagrid>
     </List>
   );
 };

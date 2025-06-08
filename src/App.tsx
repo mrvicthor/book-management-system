@@ -8,14 +8,12 @@ import EditBook from "./pages/books/edit-book";
 import CreateBook from "./pages/books/create-book";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import PersonIcon from "@mui/icons-material/Person";
-import Home from "./pages/home";
 
 export const App = () => (
   <Admin
     layout={Layout}
     dataProvider={dataProvider}
     title="Books Management System"
-    dashboard={Home}
   >
     <Resource
       name="books"
