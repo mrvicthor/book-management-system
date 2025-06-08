@@ -10,3 +10,10 @@ export interface Author {
   name: string;
   birthYear: number;
 }
+
+export interface BookFormData {
+  id?: number;
+  title: string;
+  authorId: number;
+  publishedYear: number;
+}

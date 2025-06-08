@@ -13,28 +13,22 @@
       "publishedYear": 1932
     },
     {
-      "title": "Harry Potter",
+      "title": "God Of War",
       "authorId": 1,
-      "publishedYear": 1960,
-      "id": 3
+      "publishedYear": 2003,
+      "id": 11
     },
     {
       "title": "Game Of Thrones",
-      "authorId": 2,
-      "publishedYear": 2020,
-      "id": 4
+      "authorId": 1,
+      "publishedYear": 2006,
+      "id": 14
     },
     {
-      "title": "Bond",
+      "title": "John Wick",
       "authorId": 2,
-      "publishedYear": 1936,
-      "id": 5
-    },
-    {
-      "title": "Mortal Kombat",
-      "publishedYear": 1925,
-      "authorId": 2,
-      "id": 6
+      "publishedYear": 2010,
+      "id": 15
     }
   ],
   "authors": [
