@@ -55,10 +55,7 @@ const EditBook = () => {
     <Edit>
       <SimpleForm onSubmit={handleSubmit}>
         <TextInput source="id" readOnly />
-        <TextInput
-          source="title"
-          // validate={validateUniqueTitle(dataProvider, record?.id)}
-        />
+        <TextInput source="title" />
         <AuthorReferenceInput source="authorId" />
         <NumberInput
           source="publishedYear"
