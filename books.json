@@ -15,20 +15,56 @@
     {
       "title": "God Of War",
       "authorId": 1,
-      "publishedYear": 2003,
-      "id": 11
+      "publishedYear": 2006,
+      "id": 3
+    },
+    {
+      "title": "Samurai X",
+      "authorId": 2,
+      "publishedYear": 2000,
+      "id": 4
+    },
+    {
+      "title": "Godzilla",
+      "authorId": 2,
+      "publishedYear": 2000,
+      "id": 5
     },
     {
       "title": "Game Of Thrones",
       "authorId": 1,
-      "publishedYear": 2006,
-      "id": 14
+      "publishedYear": 2010,
+      "id": 6
+    },
+    {
+      "title": "Solent University",
+      "authorId": 2,
+      "publishedYear": 2022,
+      "id": 7
+    },
+    {
+      "title": "Mortal Kombat",
+      "authorId": 1,
+      "publishedYear": 1999,
+      "id": 8
+    },
+    {
+      "title": "Gladiator",
+      "authorId": 2,
+      "publishedYear": 2024,
+      "id": 9
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "authorId": 1,
+      "publishedYear": 2019,
+      "id": 10
     },
     {
       "title": "John Wick",
       "authorId": 2,
-      "publishedYear": 2010,
-      "id": 15
+      "publishedYear": 2018,
+      "id": 11
     }
   ],
   "authors": [

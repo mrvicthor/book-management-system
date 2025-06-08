@@ -39,16 +39,23 @@ const EditBook = () => {
       if (existingBook.total && existingBook.total > 0) {
         notify("This book by the same author already exists.", {
           type: "warning",
+          anchorOrigin: { vertical: "top", horizontal: "right" },
         });
         return;
       }
 
       await create("books", { data: capitalizedData });
-      notify("Book created successfully!", { type: "success" });
+      notify("Book edited successfully!", {
+        type: "success",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+      });
       redirect("list", "books");
     } catch (error) {
-      console.error("Error creating book:", error);
-      notify("Error creating book", { type: "error" });
+      console.error("Error editing book:", error);
+      notify("Error editing book", {
+        type: "error",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+      });
     }
   };
   return (

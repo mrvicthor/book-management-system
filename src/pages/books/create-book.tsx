@@ -40,28 +40,27 @@ const CreateBook = () => {
       if (existingBook.total && existingBook.total > 0) {
         notify("This book by the same author already exists.", {
           type: "warning",
+          anchorOrigin: { vertical: "top", horizontal: "right" },
         });
         return;
       }
 
       await create("books", { data: capitalizedData });
-      notify("Book created successfully!", { type: "success" });
+      notify("Book added successfully!", {
+        type: "success",
+        anchorOrigin: { vertical: "top", horizontal: "right" },
+      });
       redirect("list", "books");
     } catch (error) {
-      console.error("Error creating book:", error);
-      notify("Error creating book", { type: "error" });
+      console.error("Error adding book:", error);
+      notify("Error adding book", { type: "error" });
     }
   };
 
   return (
     <Create>
       <SimpleForm onSubmit={handleSubmit}>
-        <TextInput
-          source="title"
-          label="Book Title"
-          helperText="Enter title"
-          fullWidth
-        />
+        <TextInput source="title" label="Book Title" fullWidth />
         <AuthorReferenceInput source="authorId" />
         <NumberInput
           source="publishedYear"
