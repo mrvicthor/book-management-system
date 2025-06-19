@@ -4,10 +4,10 @@ import {
   required,
   SimpleForm,
   TextInput,
-  useCreate,
   useDataProvider,
   useNotify,
   useRedirect,
+  useUpdate,
 } from "react-admin";
 import AuthorReferenceInput from "../../components/shared/AuthorReferenceInput";
 import { validateYear } from "../../validators/validateYear";
@@ -16,7 +16,7 @@ import { capitalizeWords } from "../../utils/textFormatting";
 
 const EditBook = () => {
   const dataProvider = useDataProvider();
-  const [create] = useCreate();
+  const [update] = useUpdate();
   const notify = useNotify();
   const redirect = useRedirect();
 
@@ -44,7 +44,7 @@ const EditBook = () => {
         return;
       }
 
-      await create("books", { data: capitalizedData });
+      await update("books", { id: data.id, data: capitalizedData });
       notify("Book edited successfully!", {
         type: "success",
         anchorOrigin: { vertical: "top", horizontal: "right" },
